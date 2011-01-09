@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-		<div id="container"> test 2
+		<div id="container">
 			<div id="content" role="main">
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
