@@ -10,26 +10,6 @@
 get_header(); ?>
 
 		<div id="container">
-		
-		<?php
-		$arrgs = array(
-		                'numberposts'     => -1,
-                    'offset'          => 0,
-                    'orderby'         => 'post_date',
-                    'order'           => 'DESC',
-                    'post_type'       => 'attachment',
-                    'post_parent'     => $post->ID );
-		 
-    
-    $attachments = get_posts($arrgs);
-
-
-    foreach($attachments as $a){
-      echo wp_get_attachment_image($a->ID, 'thumbnail');  
-    }
-    
-	  ?>
-		
 			<div id="content" role="main">
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
