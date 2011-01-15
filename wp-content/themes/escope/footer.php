@@ -6,48 +6,34 @@
  * after.  Calls sidebar-footer.php for bottom widgets.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage eScope
+ * @since eScope 1.0
  */
 ?>
-	</div><!-- #main -->
 
-	<div id="footer" role="contentinfo">
-		<div id="colophon">
-
-<?php
-	/* A sidebar in the footer? Yep. You can can customize
-	 * your footer with four columns of widgets.
-	 */
-	get_sidebar( 'footer' );
-?>
-
-			<div id="site-info">
-				<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php bloginfo( 'name' ); ?>
-				</a>
-			</div><!-- #site-info -->
-
-			<div id="site-generator">
-				<?php do_action( 'twentyten_credits' ); ?>
-				<a href="<?php echo esc_url( __('http://wordpress.org/', 'twentyten') ); ?>"
-						title="<?php esc_attr_e('Semantic Personal Publishing Platform', 'twentyten'); ?>" rel="generator">
-					<?php printf( __('Proudly powered by %s.', 'twentyten'), 'WordPress' ); ?>
-				</a>
-			</div><!-- #site-generator -->
-
-		</div><!-- #colophon -->
-	</div><!-- #footer -->
-
-</div><!-- #wrapper -->
-
-<?php
-	/* Always have wp_footer() just before the closing </body>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to reference JavaScript files.
-	 */
-
-	wp_footer();
-?>
-</body>
+<div id="footer">
+				<a href="<?php bloginfo('url'); ?>" class="logo"></a>
+				<span class="copy">© 2011 Всички права запазени</span>
+				<ul id="authors">
+					<li>
+						<a href="#" style="background-image:url(images/galio.gif);"><span></span></a>
+						<p class="name"><strong>Галин Кючуков</strong></p>
+						<p>Създател</p>
+						<p>Редактор</p>
+						<p>Тех. поддръжка</p>
+					</li>
+					<li>
+						<a href="#" style="background-image:url(images/ppenev.gif);"><span></span></a>
+						<p class="name"><strong>Преслав Пенев</strong></p>
+						<p>Създател</p>
+						<p>Гл. Редактор</p>
+					</li>
+				</ul>
+				
+			</div><!-- /#footer -->
+			
+			<div class="cleaner"></div>
+		</div><!-- /#center -->
+		
+  </body>
 </html>

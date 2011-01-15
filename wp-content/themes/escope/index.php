@@ -15,8 +15,9 @@
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+<?php get_sidebar("left"); ?> 
+
+		<div id="middle" style="padding-top:20px;">
 
 			<?php
 			/* Run the loop to output the posts.
@@ -25,8 +26,8 @@ get_header(); ?>
 			 */
 			 get_template_part( 'loop', 'index' );
 			?>
-			</div><!-- #content -->
-		</div><!-- #container -->
+			
+		</div><!-- #middle -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar("right"); ?>
 <?php get_footer(); ?>

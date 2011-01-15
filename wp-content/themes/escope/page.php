@@ -8,14 +8,15 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage eScope
+ * @since eScope 1.0
  */
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+<?php get_sidebar("left"); ?> 
+
+		<div id="middle" style="padding-top:20px;">
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -37,8 +38,7 @@ get_header(); ?>
 
 <?php endwhile; ?>
 
-			</div><!-- #content -->
-		</div><!-- #container -->
+		</div><!-- #middle -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar("right"); ?>
 <?php get_footer(); ?>
