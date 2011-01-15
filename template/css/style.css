@@ -44,8 +44,9 @@ a img { border: none; }
 
 
 /* Footer */
-#footer { width:900px; height:106px; float: left; }
+#footer { width:900px; height:106px; float: left; position:relative; }
 #footer a.logo { width:169px; height:95px; float: left; background:url(../images/spritePNG.png) no-repeat left top; margin:4px 0px 0px 0px; }
+#footer .copy { color:#ffffff; position:absolute; bottom:2px; left:43px; }
 
 #authors { float: right; margin:20px 0px 0px 0px; }
 #authors li { float: left; width:185px; color:#bbbbbb; }
@@ -197,4 +198,13 @@ h3.rightTtl { width:155px; float: left; margin:30px 0px 6px 0px; padding:0px 0px
 #blogroll ul { width:154px; float: left; padding:0px 0px 0px 26px; }
 #blogroll ul li { width:154px; float: left; margin:0px 0px 2px 0px; }
 #blogroll ul li a { color:#81c01d; float: left; text-decoration: none; }
+
+/* List */
+.caTitle { width:518px; float: left; margin:0px 0px 30px 0px; }
+.caTitle h1 { padding:0px 0px 6px 0px; margin:0px 0px 6px 0px; color:#bcbcbc; font-size:18px; border-bottom:solid 1px #d8d8d8; }
+.caTitle h1 strong { color:#f68515; }
+.caTitle p { color:#afb0b1; font-size:13px; }
+
+
+
 
