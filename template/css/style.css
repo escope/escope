@@ -60,6 +60,7 @@ a img { border: none; }
 
 #left .mostComm { width:141px; float: left; margin:10px 0px 0px 0px; }
 #left .mostComm .leftTtl { width:141px; float: left; font-size:11px; color:#1f394d; padding:4px 0px 4px 25px; background:url(../images/spriteGif.gif) no-repeat left -24px; }
+#left .mostComm .sameauthor { background-position:left top; }
 #left .mostComm ul { width:141px; float: left; padding:18px 0px 0px 0px; font-size:11px; }
 #left .mostComm ul li { width:141px; float: left; padding:0px 0px 12px 0px; margin:0px 0px 12px 0px; background:url(../images/dotted.gif) repeat-x left bottom; }
 #left .mostComm ul li p { margin:0px; }
@@ -78,21 +79,53 @@ a img { border: none; }
 
 /* ********** POST Class - used within The Loop ********** */
 .post { width:518px; float: left; margin:0px 0px 50px 0px; }
-.post h2 { width:518px; float: left; font-family: "Lucida Console"; font-size:22px; color:#2f7eba; margin:0px 0px 10px 0px; }
-.post h2 a { color:#2f7eba; text-decoration: none; float: left; }
-.post h2 a:hover { color:#63a6d9; }
-.post h1 { width:518px; float: left; font-family: "Lucida Console"; font-size:22px; color:#2f7eba; margin:0px 0px 10px 0px; }
-.post h1 a { color:#2f7eba; text-decoration: none; float: left; }
-.post h1 a:hover { color:#63a6d9; }
+.post h2, .post h1 { width:518px; float: left; font-family: "Lucida Console"; font-size:22px; color:#2f7eba; margin:0px 0px 10px 0px; }
+.post h2 a, .post h1 a { color:#2f7eba; text-decoration: none; float: left; }
+.post h2 a:hover, .post h1 a:hover { color:#63a6d9; }
 .post .postMeta { width:518px; float: left; color:#9a9a9a; margin:2px 0px 20px 0px; }
 .post .postMeta a { color:#47779e; }
 .post .postMeta a:hover { text-decoration: none; }
 .post .featuredImage { float: left; margin:0px 0px 12px 0px; }
 .post .featuredImage img { border: none; }
 .post .text { width:518px; float: left; font-size:12px; color:#565656; }
+.post .text h2 { font-size:16px; }
+.post .text h3 { font-size:16px; }
+.post .text h4 { font-size:14px; }
+.post .text h5 { font-size:13px; }
+.post .text h6 { font-size:12px; }
+.post .text ul, .post .text ol { list-style-position: inside; list-style-type: disc; padding:10px 0px 10px 0px; margin:10px 0px 10px 20px;  }
+.post .text ol { list-style-type: decimal; }
+.post .text a { color:#eda201; }
 .post .text .readMore { margin:10px 0px 10px 10px; }
 .post .text .readMore a { background:url(../images/spriteGif.gif) no-repeat left -388px; float: left; padding:2px 0px 2px 25px; color:#e76a0a; text-decoration: underline; }
 .post .text .readMore a:hover { text-decoration: none; }
+
+.post .postBox { 
+	width: 496px; float: left;
+	padding:8px 12px; margin:0px 0px 11px 0px;
+	border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;
+	-moz-box-shadow: 1px 5px 6px #bababa; -webkit-box-shadow: 1px 5px 6px #bababa; box-shadow: 1px 5px 6px #bababa;
+}
+
+.post .tags { color:#7d6812; background:#f7e9af; }
+.post .tags a { color:#2f7eba; }
+
+.post .share { 
+	color:#56711b;
+	background: url(../images/sharebg.gif) #ffffff repeat-y left top;
+	background: -moz-linear-gradient(100% 100% 180deg, #ffffff, #dbefb0);
+	background: -webkit-gradient(linear, left top, right top, from(#dbefb0), to(#ffffff)); 
+}
+
+
+.post .share a { width:32px; height:32px; float: left; margin:9px 5px 0px 0px; }
+.post .share a.facebook { background:url(../images/spritePNG.png) no-repeat 0px -197px; }
+.post .share a.twitter { background:url(../images/spritePNG.png) no-repeat -37px -197px; }
+.post .share a.digg { background:url(../images/spritePNG.png) no-repeat -74px -197px; }
+.post .share a.stumble { background:url(../images/spritePNG.png) no-repeat -111px -197px; }
+.post .share a.deliscious { background:url(../images/spritePNG.png) no-repeat -148px -197px; }
+.post .share a.linked { background:url(../images/spritePNG.png) no-repeat -185px -197px; }
+.post .share a.mail { background:url(../images/spritePNG.png) no-repeat -222px -197px; }
 
 #prevNext { width:518px; float: left; margin:30px 0px 20px 0px; padding:20px 0px 0px 0px; background:url(../images/dotted.gif) repeat-x left top; }
 #prevNext a { color:#2f7eba; display: inline; background-repeat: no-repeat; background-image:url(../images/spriteGif.gif); }
