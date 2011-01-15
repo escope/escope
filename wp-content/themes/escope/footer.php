@@ -28,8 +28,7 @@
 						<p>Създател</p>
 						<p>Гл. Редактор</p>
 					</li>
-				</ul>
-				
+				</ul>	
 			</div><!-- /#footer -->
 			
 			<div class="cleaner"></div>
