@@ -33,6 +33,20 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
 
 	?></title>
+<?php if(is_single()){
+		$mk = get_post_meta($post->ID, 'keywords', true);
+		$md = get_post_meta($post->ID, 'description', true);
+?>
+	<?php if($mk){ ?>
+		<meta content="<?php echo $mk; ?>" name="keywords" />
+	<?php } ?>
+	
+	<?php if($md){ ?>
+		<meta content="<?php echo $md; ?>" name="description" />
+	<?php } ?>
+	
+<?php } ?>
+
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
