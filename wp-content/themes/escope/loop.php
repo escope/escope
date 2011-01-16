@@ -22,8 +22,8 @@
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
 	<div class="caTitle">
-		<h1><?php _e( 'Not Found', 'twentyten' ); ?></h1>
-			<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyten' ); ?></p>
+		<h1><?php _e( 'Няма намерени статии', 'twentyten' ); ?></h1>
+			<p><?php _e( 'За съжаление всички статии от тази категория емигрираха в другите категории, търсейки по - добра реализация и тази остана празна.', 'twentyten' ); ?></p>
 	</div><!-- /caTitle -->
 <?php endif; ?>
 

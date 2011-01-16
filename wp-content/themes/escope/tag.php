@@ -3,18 +3,25 @@
  * The template for displaying Tag Archive pages.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage eScope
+ * @since eScope 1.0
  */
 
 get_header(); ?>
+<?php get_sidebar("left"); ?> 
 
-		<div id="container">
-			<div id="content" role="main">
+<?php 
+	$tag = get_term_by('name', $tag, 'post_tag'); 
+?>
 
+		<div id="middle" style="padding-top:20px;">
+
+			<div class="caTitle">
 				<h1 class="page-title"><?php
-					printf( __( 'Tag Archives: %s', 'twentyten' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+					printf( __( 'Архив за етикет: %s', 'twentyten' ), '<strong>' . single_tag_title( '', false ) . '</strong>' );
 				?></h1>
+				<p><?php echo $tag->count; ?> статии</p>
+			</div>
 
 <?php
 /* Run the loop for the tag archive to output the posts
@@ -23,8 +30,8 @@ get_header(); ?>
  */
  get_template_part( 'loop', 'tag' );
 ?>
-			</div><!-- #content -->
-		</div><!-- #container -->
 
-<?php get_sidebar(); ?>
+		</div><!-- #middle -->
+
+<?php get_sidebar("right"); ?>
 <?php get_footer(); ?>

@@ -189,7 +189,7 @@ a img { border: none; }
 }
 #commentform #submit:hover { background:#9bcc24; color:#ffffff; }
 
-#prevNext { width:518px; float: left; margin:30px 0px 20px 0px; padding:20px 0px 0px 0px; background:url(images/dotted.gif) repeat-x left top; }
+#prevNext { width:518px; float: left; margin:0px 0px 20px 0px; padding:20px 0px 0px 0px; background:url(images/dotted.gif) repeat-x left top; }
 #prevNext a { color:#2f7eba; display: inline; background-repeat: no-repeat; background-image:url(images/spriteGif.gif); }
 #prevNext a:hover { text-decoration: none; }
 #prevNext .prev {  }
@@ -229,7 +229,7 @@ h3.rightTtl { width:155px; float: left; margin:30px 0px 6px 0px; padding:0px 0px
 .caTitle { width:518px; float: left; margin:0px 0px 30px 0px; }
 .caTitle h1 { padding:0px 0px 6px 0px; margin:0px 0px 6px 0px; color:#bcbcbc; font-size:18px; border-bottom:solid 1px #d8d8d8; }
 .caTitle h1 strong { color:#f68515; }
-.caTitle p { color:#afb0b1; font-size:13px; }
+.caTitle p { color:#afb0b1; font-size:13px; margin:0px; }
 
 
 

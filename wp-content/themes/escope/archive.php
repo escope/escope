@@ -8,14 +8,16 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage eScope
+ * @since eScope 1.0
  */
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+<?php get_sidebar("left"); ?> 
+
+
+		<div id="middle" style="padding-top:20px;">
 
 <?php
 	/* Queue the first post, that way we know
@@ -28,17 +30,20 @@ get_header(); ?>
 		the_post();
 ?>
 
+<div class="caTitle">
 			<h1 class="page-title">
 <?php if ( is_day() ) : ?>
-				<?php printf( __( 'Daily Archives: <span>%s</span>', 'twentyten' ), get_the_date() ); ?>
+				<?php printf( __( 'Архив за деня: <strong>%s</strong>', 'twentyten' ), get_the_date() ); ?>
 <?php elseif ( is_month() ) : ?>
-				<?php printf( __( 'Monthly Archives: <span>%s</span>', 'twentyten' ), get_the_date('F Y') ); ?>
+				<?php printf( __( 'Месецен архив: <strong>%s</strong>', 'twentyten' ), get_the_date('F Y') ); ?>
 <?php elseif ( is_year() ) : ?>
-				<?php printf( __( 'Yearly Archives: <span>%s</span>', 'twentyten' ), get_the_date('Y') ); ?>
+				<?php printf( __( 'Годишен архив: <strong>%s</strong>', 'twentyten' ), get_the_date('Y') ); ?>
 <?php else : ?>
-				<?php _e( 'Blog Archives', 'twentyten' ); ?>
+				<?php _e( 'Целия архив', 'twentyten' ); ?>
 <?php endif; ?>
 			</h1>
+</div>
+
 
 <?php
 	/* Since we called the_post() above, we need to
@@ -54,8 +59,7 @@ get_header(); ?>
 	 get_template_part( 'loop', 'archive' );
 ?>
 
-			</div><!-- #content -->
-		</div><!-- #container -->
+		</div><!-- #middle -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar("right"); ?>
 <?php get_footer(); ?>
