@@ -86,7 +86,11 @@
 	?>
 		<p class="nocomments"><?php _e( 'Comments are closed.', 'twentyten' ); ?></p>
 	<?php endif; // end ! comments_open() ?>
-		
+	
+	<?php else : ?>
+	
+		<p class="comments_count">0 коментара</p>
+	
 	<?php endif; // end have_comments() ?>
 	
 	
