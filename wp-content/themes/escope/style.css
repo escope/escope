@@ -138,6 +138,7 @@ a img { border: none; }
 .post .share a { width:32px; height:32px; float: left; margin:9px 5px 0px 0px; }
 .post .share a.facebook { background:url(images/spritePNG.png) no-repeat 0px -197px; }
 .post .share a.twitter { background:url(images/spritePNG.png) no-repeat -37px -197px; }
+.post .share a.svejo { background:url(images/spritePNG.png) no-repeat -222px -231px; }
 .post .share a.digg { background:url(images/spritePNG.png) no-repeat -74px -197px; }
 .post .share a.stumble { background:url(images/spritePNG.png) no-repeat -111px -197px; }
 .post .share a.deliscious { background:url(images/spritePNG.png) no-repeat -148px -197px; }

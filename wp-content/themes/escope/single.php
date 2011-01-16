@@ -42,12 +42,13 @@ get_header(); ?>
 		<div class="share postBox">
 			<b>Сподели:</b>
 			<div class="cleaner"></div>
-			<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>" rel="nofollow" class="facebook" onclick="javascript: return fbs_click('<?php the_permalink(); ?>', '<?php the_title(); ?>');" target="_blank"></a>
-			<a href="javascript:;" onclick="javascript: return tw_click('<?php the_permalink(); ?>', 'Shearing eScope.eu article link: ');" class="twitter" rel="nofollow"></a>
-			<a href="#" class="digg" rel="nofollow"></a>
-			<a href="#" class="stumble" rel="nofollow"></a>
-			<a href="#" class="deliscious" rel="nofollow"></a>
-			<a href="#" class="linked" rel="nofollow"></a>
+			<a href="javascript:;" rel="nofollow" class="facebook" onclick="javascript: return fbs_click();" target="_blank"></a>
+			<a href="javascript:;" onclick="javascript: return tw_click('Shearing eScope.eu article link: ');" class="twitter" rel="nofollow"></a>
+			<a href="javascript:;" onclick="javascript: return sv_click();" class="svejo" rel="nofollow"></a>
+			<a href="javascript:;" onclick="javascript: return digg_click();" class="digg" rel="nofollow"></a>
+			<a href="javascript:;" class="stumble" onclick="javascript: return st_click();" rel="nofollow"></a>
+			<a href="javascript:;" onclick="javascript: return de_click();" class="deliscious" rel="nofollow"></a>
+			<a href="javascript:;" onclick="javascript: return li_click();" class="linked" rel="nofollow"></a>
 			<a href="#" class="mail" rel="nofollow"></a>
 		</div>
 		
