@@ -233,6 +233,20 @@ h3.rightTtl { width:155px; float: left; margin:30px 0px 6px 0px; padding:0px 0px
 .caTitle h1 strong { color:#f68515; }
 .caTitle p { color:#afb0b1; font-size:13px; margin:0px; }
 
+/* Author */
+#author-avatar { float: left; margin:0px 10px 0px 0px; }
 
+#entry-author-info { width:518px; float: left; margin:0px 0px 50px 0px; }
+#entry-author-info h2, .post h1 { font-family: "Lucida Console"; font-size:22px; color:#2f7eba; margin:0px 0px 10px 0px; }
+#entry-author-info h2 a, .post h1 a { color:#2f7eba; text-decoration: none; float: left; }
+#entry-author-info h2 a:hover, .post h1 a:hover { color:#63a6d9; }
 
-
+#entry-author-info #author-description { font-size:12px; color:#565656; }
+#entry-author-info #author-description  h2 { font-size:16px; }
+#entry-author-info #author-description  h3 { font-size:16px; }
+#entry-author-info #author-description  h4 { font-size:14px; }
+#entry-author-info #author-description  h5 { font-size:13px; }
+#entry-author-info #author-description  h6 { font-size:12px; }
+#entry-author-info #author-description  ul, .post .text ol { list-style-position: inside; list-style-type: disc; padding:10px 0px 10px 0px; margin:10px 0px 10px 20px;  }
+#entry-author-info #author-description  ol { list-style-type: decimal; }
+#entry-author-info #author-description  a { color:#eda201; }

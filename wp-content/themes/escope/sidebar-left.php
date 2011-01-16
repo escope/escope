@@ -46,7 +46,7 @@ if (is_home() || is_author()){
 	<?php
 		$p = get_post(get_query_var('p'));
 		$args = array(
-			'numberposts'     => 10,
+			'numberposts'     => 9,
 			'orderby'         => 'post_date',
 			'order'           => 'DESC',
 			'post_type'       => 'post',
@@ -72,7 +72,7 @@ if (is_home() || is_author()){
 				</li>
 				<?php } ?>
 				
-				<?php if(count($sameA) > 5){ ?>
+				<?php if(count($sameA) > 9){ ?>
 				<li class="see_all">
 					<a href="<?php echo get_author_posts_url($p->post_author); ?> ">Вижте всички</a>
 				</li>

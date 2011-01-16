@@ -25,8 +25,8 @@ get_header(); ?>
 		the_post();
 ?>
 				<div class="caTitle">
-				<h1 class="page-title author"><?php printf( __( 'Всички от автор: %s', 'twentyten' ), '<strong>' . get_the_author() . '</strong>' ); ?></h1>
-				<p><?php echo count_user_posts(get_the_author_meta( 'ID' )); ?> статии</p>
+					<h1 class="page-title author"><?php printf( __( 'Всички от автор: %s', 'twentyten' ), '<strong>' . get_the_author() . '</strong>' ); ?></h1>
+					<p><?php echo count_user_posts(get_the_author_meta( 'ID' )); ?> статии</p>
 				</div>
 				
 <?php
@@ -37,7 +37,7 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 							<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyten_author_bio_avatar_size', 60 ) ); ?>
 						</div><!-- #author-avatar -->
 						<div id="author-description">
-							<h2><?php printf( __( 'About %s', 'twentyten' ), get_the_author() ); ?></h2>
+							<h2><?php printf( __( 'Визитка %s', 'twentyten' ), get_the_author() ); ?></h2>
 							<?php the_author_meta( 'description' ); ?>
 						</div><!-- #author-description	-->
 					</div><!-- #entry-author-info -->
