@@ -84,6 +84,7 @@ a img { border: none; }
 #left .mostComm ul li a:hover { text-decoration: underline; }
 #left .mostComm ul li a:active, #left .mostComm ul li a.selected { color:#000000; }
 #left .mostComm ul li .date { color:#bababa; }
+#left .mostComm i { color:#cecece; margin:10px 0px 0px; float: left; }
 
 #left .mostComm ul li.see_all { background:none; }
 #left .mostComm ul li.see_all a { color:#2f7eba; text-decoration: underline; }
@@ -188,6 +189,7 @@ a img { border: none; }
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c6e55f), to(#9bcc24)); 
 }
 #commentform #submit:hover { background:#9bcc24; color:#ffffff; }
+#commentform a { color:#2f7eba; }
 
 #prevNext { width:518px; float: left; margin:0px 0px 20px 0px; padding:20px 0px 0px 0px; background:url(images/dotted.gif) repeat-x left top; }
 #prevNext a { color:#2f7eba; display: inline; background-repeat: no-repeat; background-image:url(images/spriteGif.gif); }

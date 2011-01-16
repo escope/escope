@@ -33,6 +33,6 @@
 			
 			<div class="cleaner"></div>
 		</div><!-- /#center -->
-		
+		<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/escope.js"></script>
   </body>
 </html>

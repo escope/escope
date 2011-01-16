@@ -3,14 +3,15 @@
  * The template for displaying Author Archive pages.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage eScope
+ * @since eScope 1.0
  */
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+<?php get_sidebar("left"); ?> 
+
+		<div id="middle" style="padding-top:20px;">
 
 <?php
 	/* Queue the first post, that way we know who
@@ -23,9 +24,11 @@ get_header(); ?>
 	if ( have_posts() )
 		the_post();
 ?>
-
-				<h1 class="page-title author"><?php printf( __( 'Author Archives: %s', 'twentyten' ), "<span class='vcard'><a class='url fn n' href='" . get_author_posts_url( get_the_author_meta( 'ID' ) ) . "' title='" . esc_attr( get_the_author() ) . "' rel='me'>" . get_the_author() . "</a></span>" ); ?></h1>
-
+				<div class="caTitle">
+				<h1 class="page-title author"><?php printf( __( 'Всички от автор: %s', 'twentyten' ), '<strong>' . get_the_author() . '</strong>' ); ?></h1>
+				<p><?php echo count_user_posts(get_the_author_meta( 'ID' )); ?> статии</p>
+				</div>
+				
 <?php
 // If a user has filled out their description, show a bio on their entries.
 if ( get_the_author_meta( 'description' ) ) : ?>
@@ -53,8 +56,8 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 	 */
 	 get_template_part( 'loop', 'author' );
 ?>
-			</div><!-- #content -->
-		</div><!-- #container -->
 
-<?php get_sidebar(); ?>
+		</div><!-- #middle -->
+
+<?php get_sidebar("right"); ?>
 <?php get_footer(); ?>
