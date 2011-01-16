@@ -42,13 +42,13 @@ get_header(); ?>
 		<div class="share postBox">
 			<b>Сподели:</b>
 			<div class="cleaner"></div>
-			<a href="#" class="facebook"></a>
-			<a href="#" class="twitter"></a>
-			<a href="#" class="digg"></a>
-			<a href="#" class="stumble"></a>
-			<a href="#" class="deliscious"></a>
-			<a href="#" class="linked"></a>
-			<a href="#" class="mail"></a>
+			<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>" class="facebook" rel="nofollow" onclick="return fbs_click()" target="_blank"></a>
+			<a href="#" class="twitter" rel="nofollow"></a>
+			<a href="#" class="digg" rel="nofollow"></a>
+			<a href="#" class="stumble" rel="nofollow"></a>
+			<a href="#" class="deliscious" rel="nofollow"></a>
+			<a href="#" class="linked" rel="nofollow"></a>
+			<a href="#" class="mail" rel="nofollow"></a>
 		</div>
 		
 		<?php comments_template( '', true ); ?>

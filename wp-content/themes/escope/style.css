@@ -50,7 +50,7 @@ a img { border: none; }
 	-moz-border-radius-bottomright: 4px; -moz-border-radius-bottomleft: 4px;
 	-webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px;
 }
-#header #searchform .fld { width:256px; height:31px; line-height:31px; float:left; margin:0px 8px 0px 0px; padding:0px 10px 0px 10px; color:#1f394d; font-size:12px; border: none; background:url(images/spritePNG.png) no-repeat left -95px; }
+#header #searchform .fld { width:256px; height:25px; line-height:25px; float:left; margin:0px 8px 0px 0px; padding:3px 10px 3px 10px; color:#1f394d; font-size:12px; border: none; background:url(images/spritePNG.png) no-repeat left -95px; }
 #header #searchform .btn { 
 	width:86px; height:31px; float: left; 
 	background:#7ecc1b; color:#ffffff; font-size:14px; border: none;
