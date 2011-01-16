@@ -82,14 +82,13 @@
 		/* If there are no comments and comments are closed,
 		 * let's leave a little note, shall we?
 		 */
-		if ( ! comments_open() ) :
+		if ( ! comments_open() ){
 	?>
+		
 		<p class="nocomments"><?php _e( 'Comments are closed.', 'twentyten' ); ?></p>
-	<?php endif; // end ! comments_open() ?>
-	
-	<?php else : ?>
-	
+	<?php } else { // end ! comments_open() ?>
 		<p class="comments_count">0 коментара</p>
+	<?php } ?>
 	
 	<?php endif; // end have_comments() ?>
 	
