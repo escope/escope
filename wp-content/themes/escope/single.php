@@ -42,7 +42,7 @@ get_header(); ?>
 		<div class="share postBox">
 			<b>Сподели:</b>
 			<div class="cleaner"></div>
-			<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>" class="facebook" rel="nofollow" onclick="return fbs_click()" target="_blank"></a>
+			<a href="javascript:;" class="facebook" rel="nofollow" onclick="javascript: return fbs_click();" target="_blank"></a>
 			<a href="#" class="twitter" rel="nofollow"></a>
 			<a href="#" class="digg" rel="nofollow"></a>
 			<a href="#" class="stumble" rel="nofollow"></a>

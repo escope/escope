@@ -120,11 +120,6 @@ $fields =  array(
 	'label_submit'         => __( 'Публикувай' )
 );
 ?>
-
-
-
-	
-	
 	
 	<div class="cFormTitle">
 		Напиши коментар

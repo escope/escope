@@ -107,7 +107,7 @@
 			<div class="postMeta">
 				<span class="authorMeta"><a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a></span> |
 				<span class="dateMeta"><?php the_time('F j, Y'); ?></span> |
-				<span class="categoryMeta"><?php the_category(', '); ?></p></span> |
+				<span class="categoryMeta"><?php the_category(', '); ?></span> |
 				<span class="commentsMeta">Коментари: <?php comments_popup_link( '0', '1', '%', '', ''); ?></span>
 			</div>
 			
