@@ -31,7 +31,7 @@
 					<h3 class="rightTtl">Категории</h3>
 					<ul class="mainLevel">
 						<?php foreach($categories as $category){  ?>
-						<li class="mainLi"><a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->cat_name; ?></a></li>
+						<li class="mainLi"><a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->cat_name; ?></a>
 						
 						<?php
 							$args = array(
@@ -53,7 +53,7 @@
 										<li class="downLi"><a href="<?php echo get_category_link( $subcategory->term_id ); ?>"><?php echo $subcategory->cat_name; ?></a></li>
 									<?php } ?>
 								</ul>
-						
+						</li>
 							<?php } ?>
 						
 						<?php } ?>
