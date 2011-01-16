@@ -10,7 +10,7 @@
 
 <?php 
 	
-if (is_home()){
+//if (is_home()){
 	
 	$args = array(
     'numberposts'     => 10,
@@ -28,19 +28,16 @@ if (is_home()){
 		<div class="mostComm">
 			<div class="leftTtl">Най - коментирани</div>
 			<ul>
-				<?php foreach($mostCommented as $post){ 
+				<?php foreach($mostCommented as $key=>$post){ 
 					setup_postdata($post);
 				?>
-				<li>
+				<li <?php if($key == 9){ echo 'class="last"'; } ?>>
 					<p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 					<span class="date"><?php the_time("j.m.Y"); ?></span>
 				</li>
 				<?php } ?>
-				<li class="see_all">
-					<a href="#">Вижте всички</a>
-				</li>
 			</ul>
 		</div>
 	</div><!-- /#left -->
 	
-<?php } ?>
+<?php //} ?>

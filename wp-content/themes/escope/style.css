@@ -88,6 +88,7 @@ a img { border: none; }
 #left .mostComm ul li.see_all { background:none; }
 #left .mostComm ul li.see_all a { color:#2f7eba; text-decoration: underline; }
 #left .mostComm ul li.see_all a:hover { text-decoration: none; }
+#left .mostComm ul li.last { background: none; }
 
 
 /* Middle */
@@ -144,13 +145,20 @@ a img { border: none; }
 
 /* Comments */
 .comments { width:518px; float: left; margin:20px 0px 0px 0px; padding:20px 0px 0px 0px; background:url(images/dotted.gif) repeat-x left top; }
-.comments h3 { margin:0px 0px 20px 0px; color:#474747; font-size:14px; }
+.comments h3 { margin:0px 0px 2px 0px; color:#474747; font-size:14px; }
 .comments h3 strong { color:#9b9b9b; }
 .comments .comment { width:498px; float: left; padding:10px; color:#929292; font-size:12px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; background:#f6f6f6; margin-bottom:12px; }
 .comments .comment a { color:#eda201; }
 .commenTitle { width:498px; float: left; padding:0px 0px 4px 0px; margin:0px 0px 8px 0px; border-bottom:solid 1px #c2c2c2; }
 .comments .commenTitle a, .commenTitle h5 { background:url(images/spriteGif.gif) no-repeat left -109px; font-weight:bold; margin:0px; font-size:12px; float: left; text-decoration: none; color:#2f7eba; padding:3px 0px 2px 20px; }
+.commenTitle h5 { color:#a8a8a8; }
 .comments .commenTitle span.date { color:#919191; float: right; margin:3px 0px 0px 0px; }
+.comments_count { margin:2px 0px 22px 0px; color:#cacaca; }
+
+.comments .navigation { width:518px; float: left; margin:0px 0px 20px 0px; }
+.comments .navigation a { color:#2f7eba; text-decoration:underline; }
+.comments .navigation .nav-previous { float: left; }
+.comments .navigation .nav-next { float: right; }
 
 .cFormTitle { 
 	width:465px; float: left; color:#ffffff; 
@@ -161,24 +169,25 @@ a img { border: none; }
 	-webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px;
 }
 
-.cForm { 
-	width:504px; float: left; padding:11px 0px 11px 14px; background:#f0f0f0; 
+#commentform { 
+	width:493px; float: left; padding:11px 11px 11px 14px; background:#f0f0f0; 
 	border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;
 	-moz-border-radius-bottomright: 4px; -moz-border-radius-bottomleft: 4px;
 	-webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px;
+	color:#adacac;
 }
 
-.cForm label { float: left; color:#878686; padding:3px 0px 0px 0px; width:88px; font-weight:bold; }
-.cForm .fld { width:361px; height:24px; margin:0px 0px 12px 0px; line-height:24px; padding:0px 10px; float: left; background:#ffffff; border:solid 1px #d9d8d8; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
-.cForm textarea { width:361px; height:100px; padding:10px; margin:0px 0px 12px 0px; float: left; overflow:auto; background:#ffffff; border:solid 1px #d9d8d8; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
-.cForm .btn { 
+#commentform label { float: left; color:#878686; padding:3px 0px 0px 0px; width:88px; font-weight:bold; }
+#commentform .fld { width:361px; height:24px; margin:0px 0px 12px 0px; line-height:24px; padding:0px 10px; float: left; background:#ffffff; border:solid 1px #d9d8d8; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
+#commentform textarea { width:361px; height:100px; padding:10px; margin:0px 0px 12px 0px; float: left; overflow:auto; background:#ffffff; border:solid 1px #d9d8d8; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
+#commentform #submit { 
 	width:110px; height:31px; float: left; margin:0px 0px 0px 88px;  line-height:32px;
 	border:solid 1px #7aa11c; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; 
 	background:#9bcc24; color:#000000; font-weight: bold; cursor: pointer;
 	background: -moz-linear-gradient(100% 100% 90deg, #9bcc24, #c6e55f);
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c6e55f), to(#9bcc24)); 
 }
-.cForm .btn:hover { background:#9bcc24; color:#ffffff; }
+#commentform #submit:hover { background:#9bcc24; color:#ffffff; }
 
 #prevNext { width:518px; float: left; margin:30px 0px 20px 0px; padding:20px 0px 0px 0px; background:url(images/dotted.gif) repeat-x left top; }
 #prevNext a { color:#2f7eba; display: inline; background-repeat: no-repeat; background-image:url(images/spriteGif.gif); }
