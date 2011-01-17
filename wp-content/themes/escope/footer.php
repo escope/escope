@@ -34,5 +34,19 @@
 			<div class="cleaner"></div>
 		</div><!-- /#center -->
 		<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/escope.js"></script>
+		<?php if (is_single()){
+				if($haveCode){
+		?>
+			<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/code/shCore.js"></script>
+			<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/code/shBrushPlain.js"></script>
+			<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/code/shBrushXml.js"></script>
+			<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/code/shBrushCss.js"></script>
+			<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/code/shBrushJScript.js"></script>
+			<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/code/shBrushJScript.js"></script>
+			<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/code/code.js"></script>
+		<?php 
+				}
+			}
+		?>
   </body>
 </html>

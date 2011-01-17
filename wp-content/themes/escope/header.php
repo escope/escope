@@ -49,6 +49,19 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+
+<?php if(is_single()){ 
+		$haveCode = get_post_meta($post->ID, 'code', true);
+		if($haveCode){
+?>
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/styles/shCore.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/styles/shThemeDefault.css" />
+
+<?php 
+		}
+	} 
+?>
+
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
 <?php
