@@ -117,6 +117,9 @@ a img { border: none; }
 .post .text .readMore { margin:10px 0px 10px 10px; }
 .post .text .readMore a { background:url(images/spriteGif.gif) no-repeat left -388px; float: left; padding:2px 0px 2px 25px; color:#e76a0a; text-decoration: underline; }
 .post .text .readMore a:hover { text-decoration: none; }
+.post .text .alignleft { float: left; margin:0px 10px 0px 0px; }
+.post .text .alignright { float: right; margin:0px 0px 0px 10px; }
+.post .text .aligncenter { float: none; clear: both; margin:10px auto 10px auto; }
 
 .post .postBox { 
 	width: 496px; float: left;
