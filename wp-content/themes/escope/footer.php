@@ -35,6 +35,7 @@
 		</div><!-- /#center -->
 		<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/escope.js"></script>
 		<?php if (is_single()){
+				$haveCode = get_post_meta($post->ID, 'code', true);
 				if($haveCode){
 		?>
 			<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/code/shCore.js"></script>
