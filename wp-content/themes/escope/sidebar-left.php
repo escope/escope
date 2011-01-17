@@ -10,7 +10,7 @@
 
 <?php 
 	
-if (is_home() || is_author()){
+if (is_home() || is_author() || is_category() || is_tag() || is_archive()){
 	
 	$args = array(
     'numberposts'     => 10,
@@ -40,7 +40,7 @@ if (is_home() || is_author()){
 		</div>
 	</div><!-- /#left -->
 	
-<?php } elseif (is_single() || is_category() || is_tag() || is_archive()){ ?>
+<?php } elseif (is_single()){ ?>
 	
 	
 	<?php
