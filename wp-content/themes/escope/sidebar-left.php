@@ -40,7 +40,7 @@ if (is_home() || is_author()){
 		</div>
 	</div><!-- /#left -->
 	
-<?php } elseif (is_single()){ ?>
+<?php } elseif (is_single() || is_category() || is_tag() || is_archive()){ ?>
 	
 	
 	<?php
