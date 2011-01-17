@@ -10,7 +10,7 @@
 
 <?php 
 	
-if (is_home() || is_author() || is_category() || is_tag() || is_archive()){
+if (is_home() || is_author() || is_category() || is_tag() || is_archive() || is_search()){
 	
 	$args = array(
     'numberposts'     => 10,
