@@ -91,7 +91,7 @@ if (is_home() || is_author() || is_category() || is_tag() || is_archive() || is_
 
 			<?php 
 				$args = array(
-				'smallest'                  => 10, 
+				'smallest'                  => 11, 
 				'largest'                   => 28,
 				'unit'                      => 'px', 
 				'number'                    => 45,  
