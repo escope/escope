@@ -75,7 +75,7 @@ a img { border: none; }
 #left { width:141px; float: left; min-height:540px; margin:10px 0px 0px 0px; padding:0px 15px 0px 0px; background:url(images/mainSeparator.gif) no-repeat right top; }
 
 #left .mostComm { width:141px; float: left; margin:10px 0px 0px 0px; }
-#left .mostComm .leftTtl { width:141px; float: left; font-size:11px; color:#1f394d; padding:4px 0px 4px 25px; background:url(images/spriteGif.gif) no-repeat left -24px; }
+#left .mostComm .leftTtl { width:115px; float: left; font-size:11px; color:#1f394d; padding:4px 0px 4px 25px; background:url(images/spriteGif.gif) no-repeat left -24px; }
 #left .mostComm .sameauthor { background-position:left top; }
 #left .mostComm ul { width:141px; float: left; padding:18px 0px 0px 0px; font-size:11px; }
 #left .mostComm ul li { width:141px; float: left; padding:0px 0px 12px 0px; margin:0px 0px 12px 0px; background:url(images/dotted.gif) repeat-x left bottom; }
@@ -254,3 +254,7 @@ h3.rightTtl { width:155px; float: left; margin:30px 0px 6px 0px; padding:0px 0px
 #entry-author-info #author-description  ul, .post .text ol { list-style-position: inside; list-style-type: disc; padding:10px 0px 10px 0px; margin:10px 0px 10px 20px;  }
 #entry-author-info #author-description  ol { list-style-type: decimal; }
 #entry-author-info #author-description  a { color:#eda201; }
+
+.tags_cloud { width:141px; float: left; margin:20px 0px 40px 0px; }
+.tags_cloud .leftTtl { width:115px; float: left; font-size:11px; color:#1f394d; margin:0px 0px 2px 0px; padding:4px 0px 4px 25px; background:url(images/spriteGif.gif) no-repeat left -421px; }
+.tags_cloud a { color:#2F7EBA; }

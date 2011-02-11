@@ -16,14 +16,14 @@
 				<span class="copy">© 2011 Всички права запазени</span>
 				<ul id="authors">
 					<li>
-						<a href="#" style="background-image:url(images/galio.gif);"><span></span></a>
+						<a href="#" style="background-image:url(<?php bloginfo( 'template_url' ); ?>/images/galio.gif);"><span></span></a>
 						<p class="name"><strong>Галин Кючуков</strong></p>
 						<p>Създател</p>
 						<p>Редактор</p>
 						<p>Тех. поддръжка</p>
 					</li>
 					<li>
-						<a href="#" style="background-image:url(images/ppenev.gif);"><span></span></a>
+						<a href="#" style="background-image:url(<?php bloginfo( 'template_url' ); ?>/images/ppenev.gif);"><span></span></a>
 						<p class="name"><strong>Преслав Пенев</strong></p>
 						<p>Създател</p>
 						<p>Гл. Редактор</p>

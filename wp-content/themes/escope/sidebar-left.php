@@ -8,6 +8,8 @@
  */
 ?>
 
+<div id="left">
+
 <?php 
 	
 if (is_home() || is_author() || is_category() || is_tag() || is_archive() || is_search()){
@@ -24,7 +26,7 @@ if (is_home() || is_author() || is_category() || is_tag() || is_archive() || is_
 	
 ?>
 
-   <div id="left">
+
 		<div class="mostComm">
 			<div class="leftTtl">Най - коментирани</div>
 			<ul>
@@ -38,7 +40,6 @@ if (is_home() || is_author() || is_category() || is_tag() || is_archive() || is_
 				<?php } ?>
 			</ul>
 		</div>
-	</div><!-- /#left -->
 	
 <?php } elseif (is_single()){ ?>
 	
@@ -58,7 +59,7 @@ if (is_home() || is_author() || is_category() || is_tag() || is_archive() || is_
 	?>
 	
 	
-	<div id="left">
+
 		<div class="mostComm">
 			<div class="leftTtl sameauthor">От същия автор</div>
 			<?php if(count($sameA) > 0){ ?>
@@ -82,6 +83,32 @@ if (is_home() || is_author() || is_category() || is_tag() || is_archive() || is_
 				<i>Този автор няма други публикации освен тази, която е активна в момента...</i>
 			<?php } ?>
 		</div>
-	</div><!-- /#left -->
+		
+		
+	
 
 <?php } ?>
+
+			<?php 
+				$args = array(
+				'smallest'                  => 10, 
+				'largest'                   => 28,
+				'unit'                      => 'px', 
+				'number'                    => 45,  
+				'format'                    => 'flat',
+				'separator'                 => " ",
+				'orderby'                   => 'name', 
+				'order'                     => 'ASC',
+				'exclude'                   => null, 
+				'include'                   => null, 
+				'topic_count_text_callback' => default_topic_count_text,
+				'link'                      => 'view', 
+				'taxonomy'                  => 'post_tag', 
+				'echo'                      => true );
+			?> 
+		
+			<div class="tags_cloud">
+				<div class="leftTtl">Прочети за:</div>
+				<?php wp_tag_cloud( $args ); ?>
+			</div>
+</div><!-- /#left -->
